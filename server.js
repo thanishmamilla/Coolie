@@ -70,7 +70,7 @@ const app = express();
 app.use(express.json());
 app.use(cors({
     // Keep CORS for API testing during development
-    origin: "http://localhost:5173",
+    origin: "https://melodious-kleicha-c889fd.netlify.app",
     credentials: true
 }));
 app.use(bodyParser.urlencoded({ extended: true }));
