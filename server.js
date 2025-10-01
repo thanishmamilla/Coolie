@@ -97,9 +97,7 @@ app.use(express.static(frontendBuildPath));
 
 // For Single Page Application (SPA) routing, serve index.html for all GET requests that haven't been handled yet (i.e., by API routes or static files).
 // FIX: Changed '/*' back to '*' to resolve PathError. This is the standard Express catch-all.
-app.get('/*', (req, res) => {
-    res.sendFile(path.join(frontendBuildPath, 'index.html'));
-});
+
 
 
 app.listen(5000, () => {
