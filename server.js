@@ -71,7 +71,8 @@ app.use(express.json());
 app.use(cors({
   origin: [
     "https://dynamic-hotteok-ea464c.netlify.app",
-    "http://localhost:5173"
+    "http://localhost:5173",
+     "https://peppy-stardust-a2df1d.netlify.app"
   ],
   credentials: true
 }));
